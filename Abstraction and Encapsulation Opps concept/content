@@ -1,2 +1,43 @@
 here is a simple teacher  mark allocation using Student id ,
   Student view there marks using there student id and there Date of brith
+
+
+
+
+Composition (HAS-A Relationship)
+
+This is one of the most important concepts used in your program.
+
+What is Composition?
+
+Composition means one class contains another class as a member.
+
+Example:
+
+private Exam exam;
+
+Inside Student class.
+
+This means:
+
+Student HAS-A Exam
+
+So a student contains exam marks.
+
+Diagram
+Student
+   |
+   | HAS-A
+   |
+Exam
+In your constructor
+public Student(int age, String name, int id, String gender, String email, Exam exam)
+
+You pass the Exam object inside the Student.
+
+Example:
+
+Exam exam=new Exam(60,79,60,78,90);
+Student stu=new Student(12,"barath",107,"male","barath@email.com",exam);
+
+✅ Concept used: Composition (HAS-A Relationship)
